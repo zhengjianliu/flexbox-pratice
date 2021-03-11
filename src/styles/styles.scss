@@ -1,0 +1,93 @@
+.App{
+    
+    height: 100%;
+    width: 100%;
+}
+
+
+nav{
+    background-color: lightblue;
+    ul{
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+        padding: 20px;
+        margin: 0 auto;
+        li{
+            cursor: pointer;
+            color: white;
+            font-size: 15pt;
+            font-weight: bold;
+            transition-duration: .2s;
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}
+
+h1, h3{
+    text-align: center;
+    
+}
+
+span{
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce{
+    from{
+        transform: scale(1) rotate(0deg);
+    }
+    50%{
+        transform: scale(0.8) rotate(45deg);
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    to{
+        transform: scale(1) rotate(90deg);
+    }
+}
+
+
+#body{
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: rgb(206, 124, 0);
+    margin: 50px auto;
+    display: flex;
+    padding: 10px;
+}
+
+.Top-Left{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.Top-Right{
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.Center-Center{
+    align-items: center;
+    justify-content: center;
+}
+
+.Bottom-Left{
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.Bottom-Right{
+    align-items: flex-end;
+    justify-content: flex-end;
+}

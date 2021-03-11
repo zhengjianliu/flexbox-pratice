@@ -1,0 +1,141 @@
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  background-color: lightblue;
+}
+
+nav ul {
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 700px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+nav ul li {
+  cursor: pointer;
+  color: white;
+  font-size: 15pt;
+  font-weight: bold;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+nav ul li:hover {
+  color: black;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+span {
+  margin: 0;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: scale(0.8) rotate(45deg);
+            transform: scale(0.8) rotate(45deg);
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  to {
+    -webkit-transform: scale(1) rotate(90deg);
+            transform: scale(1) rotate(90deg);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: scale(1) rotate(0deg);
+            transform: scale(1) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: scale(0.8) rotate(45deg);
+            transform: scale(0.8) rotate(45deg);
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  to {
+    -webkit-transform: scale(1) rotate(90deg);
+            transform: scale(1) rotate(90deg);
+  }
+}
+
+#body {
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  background-color: #ce7c00;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.Top-Left {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.Top-Right {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Center-Center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Bottom-Left {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.Bottom-Right {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=styles.css.map */
